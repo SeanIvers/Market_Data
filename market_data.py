@@ -17,3 +17,8 @@ class IBapi(EWrapper, EClient):
     def historicalData(self, bar):
         self.data.append([bar.date, bar.open, bar.high, bar.low, bar.close])
 
+st.title("Historical Market Data")
+
+st.sidebar.button("US Markets")
+st.sidebar.button("European Markets")
+st.sidebar.button("Asia Markets")
